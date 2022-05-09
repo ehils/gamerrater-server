@@ -1,0 +1,54 @@
+[
+    {
+        "model": "gamerraterapi.game",
+        "pk": 1,
+        "fields": {
+            "title": "Pikachu, and Satan Too",
+            "year_released": 2029,
+            "description": "Pokem ipsum dolor sit amet Suicune Serperior Scolipede Oshawott Nidorina Chatot. Slash Giovanni the enemy Pokemon fainted Weepinbell Reshiram Mienshao Staravia. Fire Red Carracosta Cobalion Rare Candy Officer Jenny Abra Exeggcute. Ice Staravia Lunatone Pansage Diglett Skiploom what kind of Pokemon are you. Pokemon The Movie 2000 Dragon Rage Stunfisk Corphish but nothing happened Ferroseed Probopass.",
+            "number_of_players": 2,
+            "time_to_play": 69,
+            "age_recommendation": 7,
+            "player": 1
+        }
+    },
+    {
+        "model": "gamerraterapi.game",
+        "pk": 2,
+        "fields": {
+            "title": "Shreklication",
+            "year_released": 2018,
+            "description": "Blizzard Loudred Slash Huntail Tepig Audino Kangaskhan. Blue Kingler Quilava Paras Leech Seed Fire Red Serperior. Pewter City Klink Bonsly Hidden Machine Houndour Machoke Exeggutor. Velit esse cillum dolore eu fugiat nulla pariatur Doduo excepteur sint occaecat cupidatat non proident Satoshi Tajiri Cobalion Emboar Lickilicky. Rage Mewtwo Strikes Back Mew Flamethrower Lickilicky Regirock Whiscash.",
+            "number_of_players": 2,
+            "time_to_play": 130,
+            "age_recommendation": 5,
+            "player": 1
+        }
+    },
+    {
+        "model": "gamerraterapi.game",
+        "pk": 3,
+        "fields": {
+            "title": "Meat Trickle",
+            "year_released": 2019,
+            "description": "Team Rocket Seviper Graveler Mandibuzz Feebas Togepi Entei. Leech Life Missingno Bubble Darkrai Pupitar Shinx Poison Sting. Viridian City Genesect Ruby Krokorok Larvitar Electric Potion. Swift Magikarp used Splash Pansear Durant fishing rod in a world we must defend Wigglytuff. Anim id est laborum Purrloin Nidoking Regice Combee Cradily Staryu.",
+            "number_of_players": 2,
+            "time_to_play": 666,
+            "age_recommendation": 7,
+            "player": 1
+        }
+    },
+    {
+        "model": "gamerraterapi.game",
+        "pk": 4,
+        "fields": {
+            "title": "Horseys",
+            "year_released": 2019,
+            "description": "Swift Pignite Lavender Town Bellsprout Vibrava Kingdra Lotad. Plain Badge Silcoon Braviary Remoraid Medicham Razor Leaf Silver. Blastoise Ice Berry Granbull Scratch Dodrio Dragonite Aerodactyl. Mineral Badge Terrakion Kirlia Flying duis aute irure dolor in reprehenderit Froslass Zapdos. Wing Attack Pidgeotto James Horsea Groudon Rampardos Professor Elm.",
+            "number_of_players": 6,
+            "time_to_play": 420,
+            "age_recommendation": 16,
+            "player": 1
+        }
+    }
+]

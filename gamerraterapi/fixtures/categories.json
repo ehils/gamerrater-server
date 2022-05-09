@@ -1,0 +1,37 @@
+[
+    {
+        "model": "gamerraterapi.category",
+        "pk": 1,
+        "fields": {
+            "category": "Board game"
+        }
+    },
+    {
+        "model": "gamerraterapi.category",
+        "pk": 2,
+        "fields": {
+            "category": "Role-playing game"
+        }
+    },
+    {
+        "model": "gamerraterapi.category",
+        "pk": 3,
+        "fields": {
+            "category": "MMO game"
+        }
+    },
+    {
+        "model": "gamerraterapi.category",
+        "pk": 4,
+        "fields": {
+            "category": "Adventure"
+        }
+    },
+    {
+        "model": "gamerraterapi.category",
+        "pk": 5,
+        "fields": {
+            "category": "Puzzle"
+        }
+    }
+]

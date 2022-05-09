@@ -1,0 +1,74 @@
+[
+    {
+        "model": "gamerraterapi.review",
+        "pk": 1,
+        "fields": {
+            "review": "Misty Abomasnow Omastar what kind of Pokemon are you et dolore magna aliqua Omanyte Rotom. Duis aute irure dolor in reprehenderit in voluptate Solrock James Bulbasaur Bulbasaur Rotom Golett. Kanto Tail Whip Fraxure Steel Raichu Soul Badge Spinarak. Tail Whip Weedle Scraggy Fog Badge Karrablast Ice Tyrogue. Duis aute irure dolor in reprehenderit in voluptate Magnezone Totodile Unfezant Rainbow Badge Chinchou Red.",
+            "player": 1,
+            "game": 1
+        }
+    },
+    {
+        "model": "gamerraterapi.review",
+        "pk": 2,
+        "fields": {
+            "review": "Pokem ipsum dolor sit amet Abra Pokemon Machop Golbat Rotom Vermilion City. Razor Leaf Swinub Lampent Wooper Throh Rare Candy Growl. Splash Yamask Leech Seed Poke Flute Claydol Muk Oddish. Ivysaur Electric Squirtle Ash Ketchum Weavile Gurdurr Ninjask. Vine Whip Porygon-Z Razor Leaf Stara",
+            "player": 1,
+            "game": 2
+        }
+    },
+    {
+        "model": "gamerraterapi.review",
+        "pk": 3,
+        "fields": {
+            "review": "Misty Abomasnow Omastar what kind of Pokemon are you et dolore magna aliqua Omanyte Rotom. Duis aute irure dolor in reprehenderit in voluptate Solrock James Bulbasaur Bulbasaur Rotom Golett. Kanto Tail Whip Fraxure Steel Raichu Soul Badge Spinarak. Tail Whip Weedle Scraggy Fog Badge Karrablast Ice Tyrogue. Duis aute irure dolor in reprehenderit in voluptate Magnezone Totodile Unfezant Rainbow Badge Chinchou Red.",
+            "player": 1,
+            "game": 3
+        }
+    },
+    {
+        "model": "gamerraterapi.review",
+        "pk": 4,
+        "fields": {
+            "review": "Pewter City Bisharp Gastly in a world we must defend Shellder Tropius Taillow. Sonic Boom Baltoy Pokemon Heroes Lillipup Arcanine Darumaka Exeggcute. Plain Badge Metagross Fire Exploud Timburr Octillery Celadon Department Store. Pokemon Heroes Staraptor Rotom Panpour Ponyta Vullaby Totodile. Brock Sunkern gym Cherrim Kanto Drifblim Darmanitan.",
+            "player": 1,
+            "game": 4
+        }
+    },
+    {
+        "model": "gamerraterapi.review",
+        "pk": 5,
+        "fields": {
+            "review": "Teleport Spheal Elekid Glaceon Sigilyph Dratini Diglett. Vermilion City Purugly Poke Flute Mightyena Rotom Jirachi Sharpedo. Plain Badge Professor Elm Silcoon Lucario Cradily Pidgeot Dig. The Power Of One Manaphy Manectric Venusaur Mawile Regirock Rapidash. Wartortle Poke Flute Ash Miltank the power that's inside Seismitoad Scyther.",
+            "player": 1,
+            "game": 2
+        }
+    },
+    {
+        "model": "gamerraterapi.review",
+        "pk": 6,
+        "fields": {
+            "review": "Gotta catch 'em all Ambipom Pewter City Eelektross Lanturn Registeel Machamp. Rainbow Badge Tauros Pidgeot Typhlosion Snubbull Golem Zorua. Scratch Omastar Pichu duis aute irure dolor in reprehenderit Grotle Chikorita Paras. Thunder Badge Seadra Regirock Purrloin Teleport Chansey Mime Jr. Glacier Badge Feebas Growlithe Dratini Persian Wartortle Cofagrigus.",
+            "player": 1,
+            "game": 3
+        }
+    },
+    {
+        "model": "gamerraterapi.review",
+        "pk": 7,
+        "fields": {
+            "review": "Ghost Gurdurr Ursaring Mesprit Exeggutor Walrein Scolipede. Mirror Move Beartic Thundurus Aerodactyl Kyurem Grovyle Pokemon The Movie 2000. Dragon Rage Pokemon Heroes Cresselia Blissey Scizor Trapinch Crobat. Sapphire Gastly Dragon Rage Staraptor Politoed Gary Lickilicky. Tail Whip Vileplume Klang Sandshrew Buizel Zorua Kyurem.",
+            "player": 1,
+            "game": 1
+        }
+    },
+    {
+        "model": "gamerraterapi.review",
+        "pk": 8,
+        "fields": {
+            "review": "Misty Abomasnow Omastar what kind of Pokemon are you et dolore magna aliqua Omanyte Rotom. Duis aute irure dolor in reprehenderit in voluptate Solrock James Bulbasaur Bulbasaur Rotom Golett. Kanto Tail Whip Fraxure Steel Raichu Soul Badge Spinarak. Tail Whip Weedle Scraggy Fog Badge Karrablast Ice Tyrogue. Duis aute irure dolor in reprehenderit in voluptate Magnezone Totodile Unfezant Rainbow Badge Chinchou Red.",
+            "player": 1,
+            "game": 2
+        }
+    }
+]
