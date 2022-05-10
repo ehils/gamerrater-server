@@ -33,5 +33,54 @@
         "fields": {
             "category": "Puzzle"
         }
+    },
+    {
+        "model": "gamerraterapi.category",
+        "pk": 6,
+        "fields": {
+            "category": "Strategy"
+        }
+    },{
+        "model": "gamerraterapi.category",
+        "pk": 7,
+        "fields": {
+            "category": "Dice"
+        }
+    },{
+        "model": "gamerraterapi.category",
+        "pk": 8,
+        "fields": {
+            "category": "Card"
+        }
+    },{
+        "model": "gamerraterapi.category",
+        "pk": 9,
+        "fields": {
+            "category": "Miniature"
+        }
+    },{
+        "model": "gamerraterapi.category",
+        "pk": 10,
+        "fields": {
+            "category": "Deck Building"
+        }
+    },{
+        "model": "gamerraterapi.category",
+        "pk": 11,
+        "fields": {
+            "category": "Sports"
+        }
+    },{
+        "model": "gamerraterapi.category",
+        "pk": 12,
+        "fields": {
+            "category": "Cooperative"
+        }
+    },{
+        "model": "gamerraterapi.category",
+        "pk": 13,
+        "fields": {
+            "category": "Battle"
+        }
     }
 ]
