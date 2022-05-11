@@ -38,18 +38,33 @@ class GameView(ViewSet):
         game = Game.objects.get(pk=serializer.data['id'])
         game.categories.add(*request.data['categories'])
         return Response(serializer.data, status=status.HTTP_201_CREATED)
+    def update(self, request, pk):
+        """Handle PUT requests for a event
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        
+        game = Game.objects.get(pk=pk)
+        serializer = CreateGameSerializer(game, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        # for category in request.data[categories]
+            # 
+        game.categories.remove(*game.categories.all())
+        game.categories.add(*request.data['categories'])
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 class GameSerializer(serializers.ModelSerializer):
     """JSON serializer for game types
     """
     categories = CategorySerializer(many=True)
     class Meta:
         model = Game
-        fields = ('id', 'description', 'year_released','number_of_players', 'time_to_play', 'age_recommendation', 'player', 'categories')
+        fields = ('id', 'title', 'description', 'year_released','number_of_players', 'time_to_play', 'age_recommendation', 'player', 'categories')
         depth = 1
 class CreateGameSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Game
-        fields = ['id', 'description', 'year_released','number_of_players', 'time_to_play', 'age_recommendation', 'player']
+        fields = ['id', 'title', 'description', 'year_released','number_of_players', 'time_to_play', 'age_recommendation']
 
         

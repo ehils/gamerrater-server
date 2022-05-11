@@ -17,6 +17,7 @@ def login_user(request):
     '''
     username = request.data['username']
     password = request.data['password']
+    
 
     # Use the built-in authenticate method to verify
     # authenticate returns the user object or None if no user is found
@@ -27,7 +28,8 @@ def login_user(request):
         token = Token.objects.get(user=authenticated_user)
         data = {
             'valid': True,
-            'token': token.key
+            'token': token.key,
+            'userId': token.user_id
         }
         return Response(data)
     else:
