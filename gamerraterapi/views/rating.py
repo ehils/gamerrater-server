@@ -7,61 +7,50 @@ from django.contrib.auth.models import User
 from gamerraterapi.models.game import Game
 from gamerraterapi.models.player import Player
 
-from gamerraterapi.models.review import Review
+from gamerraterapi.models.rating import Rating
 
-class ReviewView(ViewSet):
+class RatingView(ViewSet):
     def retrieve(self, request, pk):
         try:
             # player = request.query_params.get('player', None)
             # if player is not None:
-            #     Reviews = Reviews.filter(player_id=player)
-            review = Review.objects.get(pk=pk)
-            serializer = ReviewSerializer(review)
+            #     ratings = ratings.filter(player_id=player)
+            rating = Rating.objects.get(pk=pk)
+            serializer = RatingSerializer(rating)
             return Response(serializer.data)
-        except Review.DoesNotExist as ex:
+        except rating.DoesNotExist as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND) 
     def list(self, request):
-        reviews = Review.objects.all()
+        ratings = Rating.objects.all()
         game = request.query_params.get('game', None)
         if game is not None:
-            reviews = reviews.filter(game_id=game)
-        serializer = ReviewSerializer(reviews, many=True)
+            ratings = ratings.filter(game_id=game)
+        serializer = RatingSerializer(ratings, many=True)
         return Response(serializer.data)
     def create(self, request):
         """Handle POST operations
 
         Returns:
-            Response -- JSON serialized Review instance
+            Response -- JSON serialized rating instance
         """
         player = Player.objects.get(user=request.auth.user)
         game = Game.objects.get(pk = request.data['game_id'])
-        serializer = CreateReviewSerializer(data=request.data)
+        serializer = CreateRatingSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save(player=player, game=game)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ('username',)
-class PlayerSerializer(serializers.ModelSerializer):
-    user = UserSerializer()
-    class Meta:
-        model = Player
-        fields = ('user',)
-        depth =1
-class ReviewSerializer(serializers.ModelSerializer):
+
+class RatingSerializer(serializers.ModelSerializer):
     """JSON serializer for game types
     """
-    player = PlayerSerializer()
+    
     class Meta:
-        model = Review
-        fields = ('id', "review", "game", "player")
+        model = Rating
+        fields = ('id', "rating", "game", "player")
         depth = 2
 
-class CreateReviewSerializer(serializers.ModelSerializer):
+class CreateRatingSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Review
-        fields = ['id', "review"]
-        
-
+        model = Rating
+        fields = ['id', "rating"]
         

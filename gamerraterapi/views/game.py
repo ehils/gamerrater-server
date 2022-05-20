@@ -6,8 +6,10 @@ from django.core.exceptions import ValidationError
 
 from gamerraterapi.models.game import Game
 from gamerraterapi.models.player import Player
+from gamerraterapi.models.rating import Rating
 from gamerraterapi.models.category import Category
 from gamerraterapi.views.category import CategorySerializer
+from gamerraterapi.views.rating import RatingSerializer
 
 class GameView(ViewSet):
     def retrieve(self, request, pk):
@@ -53,18 +55,22 @@ class GameView(ViewSet):
         game.categories.remove(*game.categories.all())
         game.categories.add(*request.data['categories'])
         return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
 class GameSerializer(serializers.ModelSerializer):
     """JSON serializer for game types
     """
     categories = CategorySerializer(many=True)
     class Meta:
         model = Game
-        fields = ('id', 'title', 'description', 'year_released','number_of_players', 'time_to_play', 'age_recommendation', 'player', 'categories')
+        fields = ('id', 'title', 'description', 'year_released','number_of_players', 'time_to_play', 'age_recommendation', 'player', 'categories', "average_rating")
         depth = 1
 class CreateGameSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Game
         fields = ['id', 'title', 'description', 'year_released','number_of_players', 'time_to_play', 'age_recommendation']
-
+class CreateRatingSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Rating
+        fields = ['id', 'rating', 'game', 'player']
         
